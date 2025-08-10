@@ -14,10 +14,10 @@
 # }
 
 # Access policies only take effect when attached to the stack.
-resource "spacelift_policy_attachment" "access" {
-  policy_id = spacelift_policy.access.id
-  stack_id  = data.spacelift_current_stack.this.id
-}
+# resource "spacelift_policy_attachment" "access" {
+#   policy_id = spacelift_policy.access.id
+#   stack_id  = data.spacelift_current_stack.this.id
+# }
 
 # PLAN POLICY
 #
