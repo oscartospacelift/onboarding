@@ -32,6 +32,12 @@ resource "random_password" "context-password" {
   special = true
 }
 
+resource "random_password" "context-password-whatever" {
+  length  = 32
+  special = true
+}
+
+
 
 # This is a secret environment variable. Note how we didn't set the write_only
 # bit at all here. This setting always defaults to "true" to protect you against
