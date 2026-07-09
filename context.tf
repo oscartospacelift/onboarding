@@ -32,6 +32,14 @@ resource "random_password" "context-password" {
   special = true
 }
 
+# For another (secret) variable, let's create programmatically create a super
+# secret password.
+resource "random_password" "context-password-sure" {
+  length  = 64
+  special = true
+}
+
+
 # This is a secret environment variable. Note how we didn't set the write_only
 # bit at all here. This setting always defaults to "true" to protect you against
 # an accidental leak of secrets. There will be no way to retrieve the value of
