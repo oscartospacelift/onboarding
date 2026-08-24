@@ -34,7 +34,7 @@ resource "random_password" "context-password" {
 
 # For another (secret) variable, let's create programmatically create a super
 # secret password.
-resource "random_password" "context-password-two" {
+resource "random_password" "context-password-three" {
   length  = 32
   special = true
 }
